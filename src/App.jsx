@@ -1,11 +1,11 @@
-import Nav from './conponents/layout/nav'
+import Nav from './components/layout/nav'
 import './App.css'
 import { Routes, Route } from 'react-router-dom'
 import Home from './pages/home'
 import Product from './pages/product'
 import ProductOne from './pages/productOne'
 import Card from './pages/card'
-import Footer from './conponents/layout/footer'
+import Footer from './components/layout/footer'
 
 function App() {
   return (

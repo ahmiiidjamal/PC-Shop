@@ -1,9 +1,9 @@
 import { useState, useEffect } from "react"
-import Buttons from "../conponents/common/button"
+import Buttons from "../components/common/button"
 import { Block } from "@mui/icons-material"
 import '../App.css'
-import Sidebar from "../conponents/layout/sidebar"
-import Mainbar from "../conponents/layout/mainbar"
+import Sidebar from "../components/layout/sidebar"
+import Mainbar from "../components/layout/mainbar"
 export default function Product() {
     const [open, setOpen] = useState("block")
     const [filter , setFilter] = useState("cpu") 

@@ -1,7 +1,7 @@
-import MainWord from '../conponents/common/mainWord'
-import Hero from '../conponents/layout/hero'
-import Types from '../conponents/layout/types'
-import WhyPC from '../conponents/layout/whyPC'
+import MainWord from '../components/common/mainWord'
+import Hero from '../components/layout/hero'
+import Types from '../components/layout/types'
+import WhyPC from '../components/layout/whyPC'
 
 export default function Home() {
     return (
