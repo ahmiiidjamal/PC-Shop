@@ -1,0 +1,33 @@
+img {
+    padding: 6px;
+}
+
+img:hover {
+    cursor: pointer;
+    background-color: #fcfcfc;
+    border-radius: 50px;
+}
+
+.father {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+ul {
+    display: flex;
+    align-items: center;
+}
+
+.link:hover {
+    color: var(--primary);
+}
+
+.link-menu {
+    display: none;
+}
+
+/* تفعيل الموبايل لاحقاً */
+@media (max-width: 600px) {
+    /* قم بتفعيل هذا الكود لاحقاً */
+}

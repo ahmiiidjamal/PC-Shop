@@ -1,0 +1,17 @@
+.btn{
+    background-color: #fdfdfd;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 10px;
+    width: 120px;
+    display: flex;
+}
+.btn:hover{
+    border: 2px solid black;
+    margin-left: 5px;
+}
+.allbtn{
+    height: 320px;
+    /* background-color: red; */
+    overflow: auto;
+}
