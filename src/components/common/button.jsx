@@ -1,6 +1,5 @@
 import Stack from '@mui/material/Stack';
 import Button from '@mui/material/Button';
-import { red } from '@mui/material/colors';
 
 export default function Buttons({text , func}) {
   return (

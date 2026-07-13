@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom"
 import motherBoardImg from "../../assets/images/mo.png"
-import Buttons from "../common/Button"
+import Buttons from "../common/button"
 import "./hero.css"
 
 export default function Hero() {
