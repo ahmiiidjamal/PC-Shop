@@ -12,7 +12,7 @@ function Mainbar({ filter,}) {
         .map((item) =>
         (
           <div key={item.id}>
-            <img src={img} alt="" />
+            <img src={item.link} alt="" />
             <h1>{item.name}</h1>
             <h2>{item.fullName}</h2>
           </div>
