@@ -6,7 +6,7 @@ import Sidebar from "../components/layout/sidebar"
 import Mainbar from "../components/layout/mainbar"
 export default function Product() {
     const [open, setOpen] = useState("block")
-    const [filter , setFilter] = useState("cpu") 
+    const [filter , setFilter] = useState("cpu")
     function showMenu() {
         if (open == "block") {
             setOpen("none")
@@ -44,10 +44,10 @@ export default function Product() {
                     width: "100%",
                     // backgroundColor: "blue"
                 }}>
-                <div className="block sm:hidden">
-                    <Buttons text="filtering" func={showMenu} />
+                <div className="block sm:hidden mt-5">
+                    <Buttons text="filtering" func={showMenu}/>
                 </div>
-                <Mainbar filter={filter} setFilter={setFilter}/>
+                <Mainbar filter={filter} setFilter={setFilter} />
 
             </div>
         </div>

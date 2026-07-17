@@ -1,7 +1,9 @@
 import BoxOne from "../common/boxOne";
+import ScrollAnimate from '../common/scrollanimate'
 
 export default function Types() {
   return (
+    <ScrollAnimate>
     <div className="myContainer" style={{
         display:"grid",
         gridTemplateColumns:"repeat(auto-fit, minmax(250px, 1fr))",
@@ -12,5 +14,6 @@ export default function Types() {
       <BoxOne  to={"/product"} name={"Graphics Cards"} explain={"The graphics processor is responsible for displaying graphics at the best quality and is the foundation for games and designs."}/>
       <BoxOne  to={"/product"} name={"Rams"} explain={"Random Access Memory (RAM) is the high-speed line that transfers data from storage to the processor; more RAM means better performance."}/>
     </div>
+    </ScrollAnimate>
   )
 }
