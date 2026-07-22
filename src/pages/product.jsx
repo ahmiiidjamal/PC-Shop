@@ -4,9 +4,11 @@ import { Block } from "@mui/icons-material"
 import '../App.css'
 import Sidebar from "../components/layout/sidebar"
 import Mainbar from "../components/layout/mainbar"
+import { DataCardContext } from "../hooks/useContext"
 export default function Product() {
     const [open, setOpen] = useState("block")
-    const [filter , setFilter] = useState("cpu")
+    const [filter, setFilter] = useState("cpu")
+    const a = ["react", "nextjs"]
     function showMenu() {
         if (open == "block") {
             setOpen("none")
@@ -14,10 +16,6 @@ export default function Product() {
             setOpen("block")
         }
     }
-    // Source - https://stackoverflow.com/a/39345165
-    // Posted by amoreton, modified by community. See post 'Timeline' for change history
-    // Retrieved 2026-05-20, License - CC BY-SA 4.0
-
     useEffect(() => {
         window.scrollTo(0, 0)
         if (window.innerWidth <= 600) {
@@ -36,19 +34,19 @@ export default function Product() {
                     // backgroundColor: "red",
                     display: open
                 }}>
-                <Sidebar filter={filter} setFilter={setFilter}/>
+                <Sidebar filter={filter} setFilter={setFilter} />
             </div>
             {/* product of pc */}
-            <div className="myContainer"c
+            <div className="myContainer" 
                 style={{
                     width: "100%",
                     // backgroundColor: "blue"
                 }}>
                 <div className="block sm:hidden mt-5">
-                    <Buttons text="filtering" func={showMenu}/>
+                    <Buttons text="filtering" func={showMenu} />
                 </div>
+                <DataCardContext.Provider value={a}></DataCardContext.Provider>
                 <Mainbar filter={filter} setFilter={setFilter} />
-
             </div>
         </div>
     )

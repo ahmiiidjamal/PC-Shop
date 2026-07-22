@@ -12,10 +12,12 @@ function Mainbar({ filter,}) {
         .map((item) =>
         (
           <div key={item.id} style={{
-            borderRadius:"10px"
+            borderRadius:"10px",
+            padding:"3px",
+            backgroundColor:"#f6f6f6"
           }}>
             <img src={item.link} alt=""/>
-            <h1>{item.name}</h1>
+            <h1  className='p-[10px] text-[10px]'>{item.name}</h1>
             <h2>{item.fullName}</h2>
           </div>
         ))
