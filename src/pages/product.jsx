@@ -4,7 +4,6 @@ import { Block } from "@mui/icons-material"
 import '../App.css'
 import Sidebar from "../components/layout/sidebar"
 import Mainbar from "../components/layout/mainbar"
-import { DataCardContext } from "../hooks/useContext"
 export default function Product() {
     const [open, setOpen] = useState("block")
     const [filter, setFilter] = useState("cpu")
@@ -45,7 +44,6 @@ export default function Product() {
                 <div className="block sm:hidden mt-5">
                     <Buttons text="filtering" func={showMenu} />
                 </div>
-                <DataCardContext.Provider value={a}></DataCardContext.Provider>
                 <Mainbar filter={filter} setFilter={setFilter} />
             </div>
         </div>

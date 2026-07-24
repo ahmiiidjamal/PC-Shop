@@ -6,8 +6,7 @@ import Product from './pages/product'
 import ProductOne from './pages/productOne'
 import Card from './pages/card'
 import Footer from './components/layout/footer'
-import { DataCardContext } from './hooks/useContext'
-import { productGoods } from './data/productsData'
+import ContextCard from './hooks/useContext'
 function App() {
   return (
     <>
@@ -16,7 +15,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/product" element={<Product/>}/>
         <Route path='/productOne/:id' element={<ProductOne/>}/>
-        <Route path='/card' element={<DataCardContext.Provider value={productGoods}><Card/></DataCardContext.Provider>}/>
+        <Route path='/card' element={<Card/>}/>
       </Routes>
       <Footer/>
     </>

@@ -1,2 +1,13 @@
 import { createContext } from "react";
-export const DataCardContext = createContext()
+const DataCardContext = createContext()
+import { productGoods } from '../data/productsData'
+export default function ContextCard({ children }) {
+const data = productGoods
+const a = data.filter((e) => e.cardAdded == "yes" )
+return (
+        <DataCardContext.Provider>
+            
+            {children}
+        </DataCardContext.Provider>
+    )
+}
