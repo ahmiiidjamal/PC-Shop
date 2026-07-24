@@ -11,7 +11,7 @@ function Sidebar({setFilter}) {
   return (
     <div>
       <div className=' allbtn mt-5 flex flex-col items-start '>
-        <button className='btn' onClick={() => {setFilter("cpu")}}>Processor</button>
+        <button className='btn' onClick={() => {setFilter("cpu") }}>Processor</button>
         <button className='btn' onClick={() => {setFilter("gpu")}}>Graphic card</button>
         <button className='btn' onClick={() => {setFilter("ram") }}>RAM</button>
         <button className='btn' onClick={() => {setFilter("case") }}>Case</button>
