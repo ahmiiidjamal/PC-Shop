@@ -3,6 +3,7 @@ import { productGoods } from '../../data/productsData'
 import './mainbar.css'
 import BoxOne from '../common/boxOne'
 import AutohideSnackbar from '../common/snackbar';
+import { Link } from 'react-router-dom';
 function Mainbar({ filter, }) {
   return (
 
@@ -23,9 +24,11 @@ function Mainbar({ filter, }) {
 
               <h3 className='p-[10px] text-[20px] text-blue-400'>{item.price}$</h3>
               <div className='flex p-[10px] justify-between'>
-                <button className='cursor-pointer hover:text-blue-400'>Show More</button>
-                {/* <AddShoppingCartIcon className='cursor-pointer hover:text-blue-400'/> */}
-             <AutohideSnackbar/>
+                <Link to={`/productOne/${item.id}`} id={item.id}>
+                  <button className='cursor-pointer hover:text-blue-400'>Show More</button>
+                  {/* <AddShoppingCartIcon className='cursor-pointer hover:text-blue-400'/> */}
+                </Link>
+                <AutohideSnackbar />
               </div>
             </div>
           ))

@@ -4,7 +4,7 @@ import iconCart from "../../assets/icon/shopping-cart.svg"
 
 export default function Nav() {
     return (
-        <nav className=" mt-1 shadow-md">
+        <nav className="shadow-md">
             <div className="father myContainer">
                 <h1 className="text-[30px] font-bold">PC-Shop</h1>
                 <div className="links">

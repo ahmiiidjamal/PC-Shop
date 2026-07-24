@@ -10,11 +10,12 @@ import ContextCard from './hooks/useContext'
 function App() {
   return (
     <>
+    
         <Nav/>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/product" element={<Product/>}/>
-        <Route path='/productOne/:id' element={<ProductOne/>}/>
+        <Route path="/productOne/:id" element={<ProductOne/>}/>
         <Route path='/card' element={<Card/>}/>
       </Routes>
       <Footer/>
